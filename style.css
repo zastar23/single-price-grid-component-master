@@ -1,0 +1,84 @@
+html {
+    box-sizing: border-box;
+}
+
+*, 
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'Karla', sans-serif;
+}
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright_yellow: hsl(71, 73%, 54%);
+    --light_gray: hsl(204, 43%, 93%);
+    --grayis_blue: hsl(218, 22%, 67%);
+    --step--2: clamp(0.69rem, 0.65rem + 0.21vw, 0.80rem);
+    --step--1: clamp(0.83rem, 0.77rem + 0.33vw, 1.00rem);
+    --step-0: clamp(1.00rem, 0.90rem + 0.49vw, 1.25rem);
+    --step-1: clamp(1.20rem, 1.06rem + 0.71vw, 1.56rem);
+    --step-2: clamp(1.44rem, 1.24rem + 1.00vw, 1.95rem);
+    --step-3: clamp(1.73rem, 1.45rem + 1.39vw, 2.44rem);
+    --step-4: clamp(2.07rem, 1.69rem + 1.91vw, 3.05rem);
+    --step-5: clamp(2.49rem, 1.97rem + 2.59vw, 3.82rem);
+}
+
+body {
+    background-color: var(--light_gray);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+}
+
+.hero {
+    padding: 1rem;
+    font-size: var(--step-0);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+}
+
+.hero__title {
+    color: var(--cyan);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+    color: var(--bright_yellow);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero__text {
+    opacity: .6;
+    line-height: 1.5rem;
+}
+
+.cta {
+    background-color: var(--cyan);
+    padding: 1rem;
+    font-size: var(--step-0);
+}
+
+.cta__title {
+    color: white;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.price {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.big__text {
+    font-size: 2rem;
+    font-weight: 700;
+}

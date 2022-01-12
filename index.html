@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Single Price Grid Component</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,31 +17,44 @@
   </style>
 </head>
 <body>
-  Join our community
+    <main class="main">
+        <section class="hero">
+            <div class="card">
+                <h1 class="hero__title">Join our community</h1>
 
-  30-day, hassle-free money back guarantee
+                <h3 class="hero__subtitle">30-day, hassle-free money back guarantee</h3>
 
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
+                <p class="hero__text">Gain access to our full library of tutorials along with expert code reviews. 
+                Perfect for any developers who are serious about honing their skills.</p>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="card">
+                <h3 class="cta__title">Monthly Subscription</h3>
 
-  Monthly Subscription
+                <p class="price"><span class="big__text">&dollar;29</span> per month</p>
 
-  &dollar;29 per month
+                <p class="cta__text">Full access for less than &dollar;1 a day</p>
 
-  Full access for less than &dollar;1 a day
+                <button class="cta__button">Sign Up</button>
+            </div>
+        </section>
+        <section class="recomandations">
+            <div class="card">
+                <h3 class="recomandation__title">Why Us</h3>
 
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
+                <ul class="recomandation__list">
+                    <li>Tutorials by industry experts</li>
+                    <li>Peer &amp; expert code review</li>
+                    <li>Coding exercises</li>
+                    <li>Access to our GitHub repos</li>
+                    <li>Community forum</li>
+                    <li>Flashcard decks</li>
+                    <li>New videos every week</li>
+              </ul>
+          </div>
+        </section>
+    </main>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
